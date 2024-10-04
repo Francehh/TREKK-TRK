@@ -1,4 +1,3 @@
-// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
@@ -11,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-100">
-        {/* Navigation Bar */}
+        {/*NavBar*/}
         <nav className="bg-blue-800 text-white p-4">
           <div className="container mx-auto flex justify-between">
             <h1 className="text-2xl font-bold">TREKK</h1>
@@ -25,7 +24,7 @@ function App() {
           </div>
         </nav>
 
-        {/* Page Content */}
+        {/*Pages*/}
         <main className="container mx-auto p-6">
           <Routes>
             <Route path="/" element={<Home />} />
